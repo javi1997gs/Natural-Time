@@ -87,11 +87,20 @@ h1 {
     width: 200px;
     margin: auto;
     margin: 15px;
-    height: 150px;
-    border: 1px solid grey;
+    height: 250px;
     float: left;
 }
-
+.galeria .imagenes article img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;
+}
+.galeria .imagenes article p {
+    color: white;
+    margin: 0;
+    padding-top: 5px;
+    font-size: 24px;
+}
 /* ----- FOOTER ----- */
 footer {
     color: white;
