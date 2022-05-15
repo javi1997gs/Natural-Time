@@ -1,0 +1,141 @@
+:root{
+    --1: #182424;
+    --2: #2B3A3D;
+}
+
+body {
+    margin: 0;
+}
+
+/*----- PORTADA -----*/
+.portada {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(../img/1.webp); 
+    background-size: cover; 
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+}
+.portada nav {
+    padding-right: 50px;
+}
+.portada nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 200px;
+    padding: 10px;
+    transition: color 1s ease;
+}
+.portada nav a:hover {
+    color: #a9b2bc;
+}
+h1 {
+    color: white;
+    font-size: 150px;
+    padding-left: 50px;
+    line-height: 250px;
+}
+
+/*----- INTRODUCCION -----*/
+.introduccion {
+    height: 800px;
+    background-color: var(--1);
+    display: flex;
+}
+.introduccion article {
+    width: 600px;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+.introduccion article h2 {
+    font-size: 50px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-left: 135px;
+}
+.introduccion article img {
+    border: 2px solid black;
+    float: left;
+    margin-right: 120px;
+}
+.introduccion article p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/*----- GALERÍA -----*/
+.galeria {
+    height: 800px;
+    background-color: var(--2);
+}
+.galeria h2 {
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+.galeria .imagenes {
+    width: 800px;
+    margin-left: 27%;
+}
+.galeria .imagenes article {
+    width: 200px;
+    margin: auto;
+    margin: 15px;
+    height: 150px;
+    border: 1px solid grey;
+    float: left;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    color: white;
+    height: 100px;
+    padding-left: 20px;
+    background-color: black;
+    line-height: 80px;
+}
+
+
+/*----- Media Queries -----*/
+@media (max-width: 900px) {
+.portada {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.portada nav {
+    position: absolute;
+    left: 61%;
+}
+.portada nav a {
+    font-size: 10px;
+    line-height: 50px;
+    padding: 5px;
+}
+h1 {
+    font-size: 50px;
+}
+
+.introduccion article {
+width: 600px;
+padding: 10px;
+}
+.introduccion article h2 {
+font-size: 40px;
+margin-bottom: 80px;
+padding-left: 130px;
+}
+.introduccion article img {
+margin-right: 80px;
+}
+.introduccion article p {
+font-size: 18px;
+padding-top: 20px;
+}
+}
